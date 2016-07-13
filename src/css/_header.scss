@@ -1,7 +1,36 @@
 header {
-  nav {
+
+  nav.navbar-default {
+    background-image: url('../images/nav-bg.gif');
+    background-repeat: repeat-y;;
+    background-position: center;
+    border-bottom-width: 2px;
+    border-radius: 0;
+
+    .container {
+      background-color: $light-color;
+    }
+
+    ul.navbar-nav {
+      li.active {
+        a {
+          &, &:hover {
+            background-color: $light-color;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
     a {
       text-transform: uppercase;
+
+      &.navbar-brand {
+        &, &:hover {
+          background-color: $primary-color;
+          color: $light-color;
+        }
+      }
     }
   }
 }
