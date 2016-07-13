@@ -1,0 +1,29 @@
+{
+  "name": "infusion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "lite-server",
+    "sass": "sass -w src/css/app.scss:css/app.css",
+    "start": "concurrently \"npm run sass\" \"npm run serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeAstra/infusion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeAstra/infusion/issues"
+  },
+  "homepage": "https://github.com/CodeAstra/infusion#readme",
+  "dependencies": {
+    "concurrently": "^2.2.0",
+    "lite-server": "^2.2.2"
+  },
+  "devDependencies": {
+    "sass": "^0.5.0"
+  }
+}
